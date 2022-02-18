@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Discount Calculator</title>
+  </head>
+  <body>
+    <div class="card">
+      <h3 class="calc-title">Discount Or Intarest Calculator</h3>
+      <select name="" id="calculator" onChange="myNewFunction(this);">
+        <option value="1">Calculate Discount</option>
+        <option value="2">Calculate Intarest</option>
+      </select>
+      <form action="#">
+        <div class="input-item">
+          <label for="amount">Enter Amount:</label>
+          <input type="text" id="amount" />
+        </div>
+        <div class="input-item">
+          <label for="discount-percentage">Enter persentage Rate:</label>
+          <input type="text" id="percentage" />
+        </div>
+        <div class="input-item" id="visibility">
+          <label for="time">Time in month:</label>
+          <input type="text" id="time" />
+        </div>
+        <div class="input-item">
+          <label id="discount-intarest" for="discount-amount">
+            Discount Amount:</label
+          >
+          <input type="text" id="discount-amount" disabled />
+        </div>
+        <div class="input-item">
+          <label for="pay" aria-disabled="true"> Final Pay:</label>
+          <input type="text" id="pay" disabled />
+        </div>
+        <button class="calculate" type="submit">Calculate</button>
+        <input
+          type="reset"
+          value="Reset"
+          onClick="window.location.reload()"
+          class="reset"
+        />
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
